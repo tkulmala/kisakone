@@ -39,7 +39,6 @@
 
     .round_selection_table .selected {
         background-color: #DDD;
-
     }
 
     .results {

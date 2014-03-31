@@ -21,8 +21,8 @@
  * *}
 {if $user eq null}
 <div class="loginbox" id="login_panel">
-    <a id="login_link" href="{url page='login'}">{translate id=login}</a> |
-    <a href="{url page='register'}">{translate id=register}</a>
+    <a class="link-as-button" id="login_link" href="{url page='login'}">{translate id=login}</a>
+    <a class="link-as-button" href="{url page='register'}">{translate id=register}</a>
 
 </div>
 <form class="loginbox hidden" action="{$url_base}" id="login_form" method="post">
@@ -40,7 +40,8 @@
     </div>
 
     <div>
-        <input id="loginRememberMe" type="checkbox" name="rememberMe" /> Muista salasana
+        <input id="loginRememberMe" type="checkbox" name="rememberMe" />
+        <label for="loginRememberMe">{translate id='remember_me'}</label>
         <input id="loginSubmit" type="submit" value="{translate id='loginbutton'}" />
     </div>
     <div>
@@ -53,8 +54,8 @@
     <div>{translate id='loginform_loggedin_title'}</div>
     <div>{translate id='loginform_loggedin_as' user=$user->username firstname=$user->firstname lastname=$user->lastname}</div>
     <p>
-        <a id="loginMyInfo" href="{url page=myinfo}">{translate id='my_info'}</a> |
-        <a id="logout" href="{$url_base}?action=logout">{translate id='logout'}</a>
+        <a class="link-as-button" id="loginMyInfo" href="{url page=myinfo}">{translate id='my_info'}</a>
+        <a class="link-as-button" id="logout" href="{$url_base}?action=logout">{translate id='logout'}</a>
     </p>
     </div>
 {/if}
