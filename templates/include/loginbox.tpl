@@ -51,11 +51,13 @@
 </form>
 {else}
     <div class="loginbox">
-    <div>{translate id='loginform_loggedin_title'}</div>
-    <div>{translate id='loginform_loggedin_as' user=$user->username firstname=$user->firstname lastname=$user->lastname}</div>
-    <p>
-        <a class="link-as-button" id="loginMyInfo" href="{url page=myinfo}">{translate id='my_info'}</a>
-        <a class="link-as-button" id="logout" href="{$url_base}?action=logout">{translate id='logout'}</a>
-    </p>
+        <div>
+            {translate id='loginform_loggedin_title'}<br />
+            {translate id='loginform_loggedin_as' user=$user->username firstname=$user->firstname lastname=$user->lastname}
+        </div>
+        <div>
+            <a class="link-as-button" id="loginMyInfo" href="{url page=myinfo}">{translate id='my_info'}</a>
+            <a class="link-as-button" id="logout" href="{$url_base}?action=logout">{translate id='logout'}</a>
+        </div>
     </div>
 {/if}

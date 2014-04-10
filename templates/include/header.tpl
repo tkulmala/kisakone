@@ -61,8 +61,10 @@
       {/if}
       <img id="sitelogo" src="{$url_base}images/sitelogo.png" alt="{translate id=site_name}" />
 
-      <h1 id="sitename">{translate id=site_name_long}</h1>
-      <div id="pagename">{$title}</div>
+      <div id="sitename">
+        <h1 id="title">{translate id=site_name_long}</h1>
+        <div id="pagename">{$title}</div>
+      </div>
       </div>
       {include file="include/mainmenu.tpl"}
             </td></tr>
