@@ -141,23 +141,26 @@ h1#title {
     width: 80%;
 }
 
-a.link-as-button {
+a.link-as-button, button, input[type="submit"] {
     font-variant: small-caps;
     display: inline-block;
-    background-color: #293150;
-    color: #ffffff;
+    background-color: #DFE0E5;
+    color: #293150;
     text-decoration: none;
-    border: 1px solid #000000;
+    border: 1px solid #293150;
     border-radius: 6px;
     padding: 5px;
+    margin-bottom: 2px;
     text-align: center;
     min-width: 50px;
     max-width: 100px;
+    font-weight: bold;
 }
 
-a.link-as-button:hover {
-    background-color: #437141;
-    color: #ffffff;
+a.link-as-button:hover, button:hover, input[type="submit"]:hover {
+    color: #437141;
+    background-color: #ffffff;
+    font-weight: bold;
 }
 
 .evenform label {

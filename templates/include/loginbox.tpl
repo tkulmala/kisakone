@@ -23,7 +23,6 @@
 <div class="loginbox" id="login_panel">
     <a class="link-as-button" id="login_link" href="{url page='login'}">{translate id=login}</a>
     <a class="link-as-button" href="{url page='register'}">{translate id=register}</a>
-
 </div>
 <form class="loginbox hidden" action="{$url_base}" id="login_form" method="post">
     <input type="hidden" name="comingFrom" value="{$smarty.server.REQUEST_URI|escape}" />

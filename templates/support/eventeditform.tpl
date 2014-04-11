@@ -22,7 +22,9 @@
  * *}
  {capture assign=extrahead}
  <style type="text/css">{literal}
-.narrow_selects select { min-width: 0; }
+.narrow_selects select {
+    min-width: 0;
+}
 {/literal}</style>
 {/capture}
 {if $new}
