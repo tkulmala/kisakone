@@ -22,6 +22,7 @@ Kisakone versions are simply release date tags:
   * Fix javascript/base loading error without mod_rewrite.
   * Registration will not fail with E_STRICT. GH #102.
   * Add apple-touch-icon.png for Apple device bookmarks etc.
+  * Fix javascript/base loading error without mod_rewrite.
 
 Read [Upgrade notes](https://github.com/tuminoid/kisakone/blob/master/doc/upgrade/upgrade_to_20140415.md)
 for additional actions needed.
